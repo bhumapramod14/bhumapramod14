@@ -1,9 +1,48 @@
-<h1 align="center">Hi 👋, I'm Bhuma Pramod Kumar Reddy</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+# MeeBhoomi Automation
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## Overview
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+This project automates the MeeBhoomi website using Playwright.
+
+## Technologies Used
+
+- Playwright
+- JavaScript
+- Node.js
+
+## Project Files
+
+- `src/login.spec.js` – Login automation.
+- `tests/index.spec.js` – Main automation script.
+
+## How to Run
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the login script:
+
+```bash
+npx playwright test src/login.spec.js
+```
+
+Run the main automation:
+
+```bash
+npx playwright test tests/index.spec.js
+```
+
+## Challenges
+
+- OTP and CAPTCHA need to be entered manually.
+- After submitting the search request, the website keeps showing **"Loading... Please Wait"** in Playwright.
+- In a normal browser, the same request returns **"No Data Found"**.
+
+## Notes
+
+- OTP verification and CAPTCHA require manual input during execution because they are dynamic.
+- The automation was developed using Playwright.
+- During testing, the MeeBhoomi portal remained on "Loading... Please Wait" after the search request in the Playwright browser, while the same request returned "No Data Found" in a normal Chrome browser.
